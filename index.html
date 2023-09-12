@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Mango Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__colume">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!-- To Do:  Wifi Icon -->
+      </div>
+      <div class="status-bar__colume">
+        <span>18:43</span>
+      </div>
+
+      <div class="status-bar__colume">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+        <!-- Battery Icon -->
+        <i class="fa-solid fa-bolt"></i>
+        <!-- Lightning Icon -->
+      </div>
+    </div>
+    <header class="welcom-header">
+      <h1 class="welcom-header__title">Welcome to Mango Clone</h1>
+      <p class="welcom-header__text">
+        If you have a Mango C Account, log in with your email or phone number.
+      </p>
+      <form action="friends.html" method="get" id="login-form">
+        <input
+          name="username"
+          type="text"
+          placeholder="Email or phone number"
+        />
+        <input name="password" type="password" placeholder="Password" />
+        <input type="submit" value="Log in" />
+        <a href="#"> Find Mango C Account or Password</a>
+      </form>
+    </header>
+    <script
+      src="https://kit.fontawesome.com/14e31ebcb6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
