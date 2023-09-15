@@ -5,11 +5,16 @@
     width: 100vw;
     background-color: var(--yellow);
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    font-size: 32px;
-    font-weight: 600;  
+    font-size: 18px;
+    padding: 64px;
+    /* font-weight: 600;  */
     top: 0;
+}
+
+#no-mobile span {
+    margin-right: 64px;
 }
 
 
@@ -18,10 +23,10 @@
         display: none;
         position: fixed; 
     }
-    /* 스크롤 불가 설정 
+   /* 스크롤 불가 설정  */ 
     body {  
     margin: 0;  
     height: 100%;  
     overflow: hidden;  
-    }   */  
+    }   
 }
