@@ -1,22 +1,4 @@
-.find-icons {
-    display: flex;
-    justify-content: space-between;
-}
 
-.find-icons__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.find-icons__icon i {
-    font-size: 30px;
-}
-
-.find-icons__icon span {
-    margin-top: 15px;
-}
 
 .recommended-friends {
     margin: 25px 0px;
@@ -91,10 +73,10 @@
     color: #f877a0;
 }
 
-.opne-post__photo {
+.open-post__photo {
     position: relative;
 }
-.opne-post__photo img {
+.open-post__photo img {
     object-fit: cover;  
     width: 120px;
     height: 120px;
@@ -114,4 +96,29 @@
 }
 .open-post__heart-count span {
     margin-left: 4px;
+}
+
+@keyframes heartBeat {
+    0%{
+        color: tomato;
+        transform: none;
+    }
+    35%{
+        color: tomato;
+    }
+    50%{
+        color: rgb(254, 43, 43);
+        transform: scale(1.3);
+     }
+    80%{
+        color: tomato;
+    }
+    100%{
+        color: tomato;
+        transform: none;
+    }
+}
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
